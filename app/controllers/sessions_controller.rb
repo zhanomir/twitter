@@ -14,4 +14,8 @@ class SessionsController < ApplicationController
     # Create an error message and re-render the signin form.
   end
   end
+  def destroy
+    sign_out
+    redirect_to root_url
+  end
 end
